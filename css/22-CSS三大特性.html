@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性</title>
+    <style>
+        /* li {
+            font-size: 16px;
+            list-style: none;
+            text-indent: 2em;
+        } */
+        div {
+            height: 100px;
+            background-color: red;
+            color: yellow;
+        }
+        div {
+            background-color: pink;
+        }
+        table {
+            border: 1px solid red;
+        }
+        thead, tbody, td {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS三大特性</h3>
+    <ul>
+        <li>层叠性：相同的选择器设置相同的样式，就近一致原则</li>
+        <li>继承性：子元素继承父元素某些样式，颜色，文字属性</li>
+        <li>优先级：优先级计算公式</li>
+    </ul>
+    <h4>1.层叠性</h4>
+    <div>我是一个div盒子</div>
+    <h4>2.继承性</h4>
+    <div>
+        <p>我是一个段落，没有样式，我继承我父亲div的样式</p>
+        <p>行高的继承,font:size/x 表示子元素继承之后，行高是当前元素文字size的1.5倍</p>
+    </div>
+    <h4>3.优先级</h4>
+    <table align="center" cellspacing="0">
+        <thead>
+            <td>选择器</td>
+            <td>选择器权重</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>继承或者*</td>
+                <td>0,0,0,0</td>
+            </tr>
+            <tr>
+                <td>元素选择器</td>
+                <td>0,0,0,1</td>
+            </tr>
+            <tr>
+                <td>类选择器，伪类选择器</td>
+                <td>0,0,1,0</td>
+            </tr>
+            <tr>
+                <td>id选择器</td>
+                <td>0,1,0,0</td>
+            </tr>
+            <tr>
+                <td>行内样式表</td>
+                <td>1,0,0,0</td>
+            </tr>
+            <tr>
+                <td>!important重要的</td>
+                <td>∞</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式</title>
+    <style>
+        .big {
+            text-decoration: none;
+            background-color: red;
+            display: block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>元素的显示模式</h2>
+    <h3>一：显示模式分类</h3>
+    <ul>
+        <li>行内元素</li>
+        <li>块级元素</li>
+        <li>行内块元素</li>
+    </ul>
+    <h3>二：各个显示模式特点</h3>
+    <h4>2.1行内元素</h4>
+    <ul>
+        <li>span、a标签</li>
+        <li>行内元素在一行显示，不能直接设置宽和高</li>
+    </ul>
+    <h4>2.2块级元素</h4>
+    <ul>
+        <li>
+            h、p、div、ul、li、ol标签
+        </li>
+        <li>
+            自己独自占一行，可以设置高度宽度、默认宽度是(父亲)容器的100%
+        </li>
+    </ul>
+    <h4>2.3行内块元素</h4>
+    <ul>
+        <li>
+            input、img、td标签
+        </li>
+        <li>一行显示多个，同时可以设置宽和高</li>
+    </ul>
+    <h3>显示模式转化</h3>
+    <a class="big" href="http://www.qq.com">大范围链接</a>
+</body>
+</html>

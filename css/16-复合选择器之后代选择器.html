@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 元素1和元素2中间用空格隔开
+        元素1是父级元素2是子级，最终选择是元素2
+        元素2可以是儿子也可以是孙子 */
+        /* 元素1和元素2可以是任意的基础选择器组合 */
+        ol li {
+            color: pink;
+        }
+        ol li a {
+            color: green;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="http://www.qq.com">我是孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ul>
+</body>
+</html>
