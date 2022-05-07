@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+    <style>
+        div {
+            /* background-color: 默认transparent */
+            width: 2000px;
+            height: 2000px;
+            /* background-color: pink;
+            background-image: url(天气.jpg); */
+            /* 设置平铺：默认平铺 */
+            /* background-repeat: no-repeat; */
+            /* background-position: 方位名词; */
+            /* 如果方位名词只有一个，另一个默认居中显示 */
+            /* background-position: center top;
+            background-attachment: fixed; */
+            /* 复合写法如下： */
+            /* color img repeat position attachment */
+            background: rgba(0, 0, 0, 0.3) url(天气.jpg) no-repeat fixed center top;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
