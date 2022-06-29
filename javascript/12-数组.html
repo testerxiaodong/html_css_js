@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 数组创建方式
+        // 1.字面量
+        var arr1 = [1, 2, 3, 4];
+        console.log(arr1);
+        var arr2 = new Array(1, 2, 3, 4, 5);
+        console.log(arr2)
+        // 新增末尾数组元素
+        arr1.push(5, 6);
+        console.log(arr1);
+        // 数组前新增元素
+        arr1.unshift(1, 0);
+        console.log(arr1);
+        // 数组删除元素
+        arr1.pop();
+        console.log(arr1);
+        arr1.shift();
+        console.log(arr1);
+        arr1 = arr1.concat(arr2);
+        console.log(arr1);
+        // 查询元素第一个索引值
+        var res = arr1.indexOf(9);
+        console.log(res);
+        res = arr1.lastIndexOf(1);
+        console.log(res);
+        // 双指针反转数组
+        var arr3 = [1, 2, 3, 4];
+        var tmp = 0;
+        for (i = 0, j = arr3.length - 1; i < j; i++, j--) {
+            tmp = arr3[j];
+            arr3[j] = arr3[i];
+            arr3[i] = tmp;
+        }
+        console.log(arr3);
+        // 删除数组重复元素
+        var newArr1 = new Array();
+        for (i = 0; i < arr1.length; i++) {
+            if (newArr1.indexOf(arr1[i]) != -1) {
+                newArr1.push(arr1[i]);
+            }
+        }
+        console.log(newArr1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

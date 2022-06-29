@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        /* 定义动画 */
+        @keyframes move {
+            0% {
+                transform: translate(0px);
+            }
+            100% {
+                transform: translate(1000px);
+            }
+        }
+        div:first-child {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        div:last-child {
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+            background-color: pink;
+            animation: move 1s backwards;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>
