@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改网页元素</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 800px;
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .agrue {
+            width: 800px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .agrue textarea {
+            width: 600px;
+            height: 100px;
+        }
+
+        div {
+            width: 800px;
+            height: 20px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        ul {
+            width: 800px;
+            list-style: none;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>评论</header>
+    <div class="agrue">
+        <textarea placeholder="输入评论，点击发表"></textarea>
+        <button>发表</button>
+    </div>
+    <div>评论区</div>
+    <ul>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        var textarea = document.querySelector('textarea');
+        btn.addEventListener('click', function() {
+            if (textarea.value == '') {
+                alert('内容为空')
+            } else {
+                var li = document.createElement('li');
+                li.innerHTML = textarea.value;
+                ul.insertBefore(li, ul.children[0]);
+                textarea.value = '';
+            }
+            
+        })
+    </script>
+</body>
+</html>

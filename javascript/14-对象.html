@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象创建的三种方式
+        var obj1 = {
+            name: '曾东',
+            age: 18,
+            sing: function() {
+                console.log('sing a song');
+            }
+        }
+        console.log(obj1.name);
+        console.log(obj1['name']);
+        obj1.sing();
+        var obj2 = new Object();
+        obj2.name = '曾西';
+        obj2.age = 18;
+        obj2.sing = function() {
+            console.log('sing a song');
+        }
+        obj2.sing();
+        console.log(obj2);
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.sing = function() {
+                console.log('sing a song');
+            }
+        }
+        var person1 = new Person('哈哈', 18);
+        console.log(person1);
+        person1.sing();
+    </script>
+</body>
+</html>

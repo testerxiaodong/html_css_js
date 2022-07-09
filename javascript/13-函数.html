@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function twoSum(nums, target) {
-            var result = new Array();
-            var seen = new Set();
-            for (i = 0; i < nums.lenght; i++) {
-                if (seen.has(target - nums[i])) {
-                    result.push[seen[target - nums[i]], i]
-                } else {
-                    seen.add
-                }
-            }
+        // 具名函数
+        function Sum(a, b) {
+            return a + b;
         }
+        // 匿名函数
+        var f1 = function() {
+            console.log(arguments);
+            return "hello world";
+        }
+        console.log(Sum(1, 2));
+        console.log(f1(1, 2));
     </script>
 </head>
 <body>
