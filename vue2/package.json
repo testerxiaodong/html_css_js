@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "vue2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-es6模块化规范.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "then-fs": "^2.0.0"
+  }
+}
